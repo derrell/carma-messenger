@@ -17,11 +17,11 @@ As shown in the diagram, any given piece of functionality may require client nod
 
 ## System Configuration and Installation
 
-The carma-messenger system is meant to be run using docker. The configuration of carma-messanger is similar, though not identical, to configuring the CARMA Platform following the process described in the document [CARMA Platform Detailed Design - Parameter and Launch Standards for Different Vehicle Configurations.docx](https://usdot-carma.atlassian.net/wiki/spaces/CAR/pages/216006666/CARMA3+Developer+Guides). At the moment, the user does not need to configure any folders on the host vehicle except ensuring that the logging directories ```/opt/carma/logs``` and ```/opt/carma/.ros``` exist and are writeable. In addition, the user should utilize the [carma script](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/master/engineering_tools/carma) and [__carma_autocomplete file](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/master/engineering_tools/__carma_autocomplete) to launch and manage the system. The carma script can be placed under ```/usr/bin``` and the autocomplete file under ```/etc/bash_completion.d/``` (Ubuntu 16.04). 
+The carma-messenger system is meant to be run using docker. The configuration of carma-messanger is similar, though not identical, to configuring the CARMA Platform following the process described in the document [CARMA Platform Detailed Design - Parameter and Launch Standards for Different Vehicle Configurations.docx](https://usdot-carma.atlassian.net/wiki/spaces/CAR/pages/216006666/CARMA3+Developer+Guides). At the moment, the user does not need to configure any folders on the host vehicle except ensuring that the logging directories ```/opt/carma/logs``` and ```/opt/carma/.ros``` exist and are writeable. In addition, the user should utilize the [carma script](https://github.com/usdot-fhwa-stol/carma-platform/blob/master/engineering_tools/carma) and [__carma_autocomplete file](https://github.com/usdot-fhwa-stol/carma-platform/blob/master/engineering_tools/__carma_autocomplete) to launch and manage the system. The carma script can be placed under ```/usr/bin``` and the autocomplete file under ```/etc/bash_completion.d/``` (Ubuntu 16.04). 
 
 ```
-curl -L https://raw.githubusercontent.com/usdot-fhwa-stol/CARMAPlatform/master/engineering_tools/carma >> /usr/bin/carma
-curl -L https://raw.githubusercontent.com/usdot-fhwa-stol/CARMAPlatform/master/engineering_tools/__carma_autocomplete >> /etc/bash_completion.d/__carma_autocomplete
+curl -L https://raw.githubusercontent.com/usdot-fhwa-stol/carma-platform/master/engineering_tools/carma >> /usr/bin/carma
+curl -L https://raw.githubusercontent.com/usdot-fhwa-stol/carma-platform/master/engineering_tools/__carma_autocomplete >> /etc/bash_completion.d/__carma_autocomplete
 ```
 <br>
 
@@ -56,25 +56,25 @@ carma start all
 ```
 
 # CARMAPlatform
-The primary CARMAPlatform repository can be found [here](https://github.com/usdot-fhwa-stol/CARMAPlatform) and is part of the [USDOT FHWA STOL](https://github.com/usdot-fhwa-stol/)
+The primary CARMAPlatform repository can be found [here](https://github.com/usdot-fhwa-stol/carma-platform) and is part of the [USDOT FHWA STOL](https://github.com/usdot-fhwa-stol/)
 github organization. Documentation on how the CARMAPlatform functions, how it will evolve over time, and how you can contribute can be found at the above links as well
 
 ## Contribution
-Welcome to the CARMA contributing guide. Please read this guide to learn about our development process, how to propose pull requests and improvements, and how to build and test your changes to this project. [CARMA Contributing Guide](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/develop/Contributing.md) 
+Welcome to the CARMA contributing guide. Please read this guide to learn about our development process, how to propose pull requests and improvements, and how to build and test your changes to this project. [CARMA Contributing Guide](https://github.com/usdot-fhwa-stol/carma-platform/blob/develop/Contributing.md) 
 
 ## Code of Conduct 
-Please read our [CARMA Code of Conduct](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/develop/Code_of_Conduct.md) which outlines our expectations for participants within the CARMA community, as well as steps to reporting unacceptable behavior. We are committed to providing a welcoming and inspiring community for all and expect our code of conduct to be honored. Anyone who violates this code of conduct may be banned from the community.
+Please read our [CARMA Code of Conduct](https://github.com/usdot-fhwa-stol/carma-platform/blob/develop/Code_of_Conduct.md) which outlines our expectations for participants within the CARMA community, as well as steps to reporting unacceptable behavior. We are committed to providing a welcoming and inspiring community for all and expect our code of conduct to be honored. Anyone who violates this code of conduct may be banned from the community.
 
 ## Attribution
-The development team would like to acknowledge the people who have made direct contributions to the design and code in this repository. [CARMA Attribution](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/develop/ATTRIBUTION.txt) 
+The development team would like to acknowledge the people who have made direct contributions to the design and code in this repository. [CARMA Attribution](https://github.com/usdot-fhwa-stol/carma-platform/blob/develop/ATTRIBUTION.txt) 
 
 ## License
-By contributing to the Federal Highway Administration (FHWA) Connected Automated Research Mobility Applications (CARMA), you agree that your contributions will be licensed under its Apache License 2.0 license. [CARMA License](https://github.com/usdot-fhwa-stol/CARMAPlatform/blob/develop/docs/License.md) 
+By contributing to the Federal Highway Administration (FHWA) Connected Automated Research Mobility Applications (CARMA), you agree that your contributions will be licensed under its Apache License 2.0 license. [CARMA License](https://github.com/usdot-fhwa-stol/carma-platform/blob/develop/docs/License.md) 
 
 ## Contact
 Please click on the CARMA logo below to visit the Federal Highway Adminstration(FHWA) CARMA website.
 
-[![CARMA Image](https://raw.githubusercontent.com/usdot-fhwa-stol/CARMAPlatform/develop/docs/image/CARMA_icon.png)](https://highways.dot.gov/research/research-programs/operations/CARMA)
+[![CARMA Image](https://raw.githubusercontent.com/usdot-fhwa-stol/carma-platform/develop/docs/image/CARMA_icon.png)](https://highways.dot.gov/research/research-programs/operations/CARMA)
 
 
 
